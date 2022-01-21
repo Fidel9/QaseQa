@@ -36,7 +36,6 @@ public class LoginTest extends BaseTest {
 
         $(By.xpath("//*[@class='btn btn-primary']")).click();
         $(By.xpath("//input[@name='title']")).setValue("A");
-        // $(By.xpath("//input[@name='code']")).setValue(" ");
         $(By.xpath("//button[@type='submit']")).click();
         $(By.xpath("//div[@class='form-control-feedback']")).shouldBe(visible);
     }
@@ -51,7 +50,6 @@ public class LoginTest extends BaseTest {
         $(By.xpath("//*[@class='btn btn-primary']")).click();
         $(By.xpath("//input[@name='title']")).setValue("Project");
         $(By.xpath("//button[@type='submit']")).click();
-        $(By.xpath("//span[@class='style_statistic-SjRZY']")).shouldBe(visible);
 
     }
 }
